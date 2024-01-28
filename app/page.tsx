@@ -1,16 +1,15 @@
 import { DotBackgroundDemo } from "./dotBg";
-
 import Spotlight from "@/components/ui/Spotlight";
 import SparklesCore from "@/components/ui/Sparkles";
 export default function Home() {
   return (
-    <main className="">
+    <main>
       <SpotlightPreview />
     </main>
   );
 }
 
-export function SpotlightPreview() {
+function SpotlightPreview() {
   return (
     <div className="h-[40rem] w-full flex justify-start md:items-center md:justify-center bg-white/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <DotBackgroundDemo>
