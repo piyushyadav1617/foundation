@@ -12,7 +12,7 @@ const Hero = ()=>{
                     
                       
                       <p>
-                       Together, we can weave a tapestry of change, kindness, and enduring progress. Let's make a difference, one heart, one life at a time.
+                       Together, we can weave a tapestry of change, kindness, and enduring progress. Let&apos;s make a difference, one heart, one life at a time.
                       </p>
                       <DonateBtn/>
                  </div>
