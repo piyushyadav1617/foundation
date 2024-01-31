@@ -1,0 +1,37 @@
+# Dependency directories
+node_modules
+.next
+
+# Build output
+/out/
+/build/
+/dist/
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Version control
+.git
+
+# Logs
+*.log
+
+# Configuration files
+package-lock.json
+package.json
+yarn.lock
+
+# Cache
+.cache
+
+# Specific file patterns that don't require formatting
+*.min.js
+*.min.css
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+.env.test
