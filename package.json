@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint . --fix --max-warnings=0",
+    "format": "prettier . --write",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.5",
@@ -32,8 +34,16 @@
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.0.7",
+    "lint-staged": "^15.2.1",
     "postcss": "^8",
+    "prettier": "3.2.4",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,css}": "eslint --cache --fix",
+    "*.--write": "prettier --write"
   }
 }
