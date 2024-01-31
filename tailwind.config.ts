@@ -41,7 +41,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"),require("tailwind-gradient-mask-image")],
 } satisfies Config
 
 export default config

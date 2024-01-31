@@ -1,4 +1,4 @@
 const NewsList = () => {
-	return <section>news List</section>;
+	return <section className="min-h-[80vh]">news List</section>;
 };
 export default NewsList;

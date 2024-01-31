@@ -22,7 +22,7 @@ export const InfiniteMovingCards = ({
 
 	useEffect(() => {
 		addAnimation();
-	}, []);
+	},[]);
 	const [start, setStart] = useState(false);
 	function addAnimation() {
 		if (containerRef.current && scrollerRef.current) {
@@ -70,26 +70,27 @@ export const InfiniteMovingCards = ({
 		<div
 			ref={containerRef}
 			className={cn(
-				'scroller relative z-20  max-w-7xl overflow-hidden  ',
+				'scroller relative lg:mx-10 2xl:mx-auto 2xl:w-[1400px] overflow-hidden',
 				className
 			)}
 		>
+			 {/* <div className='gradient-mask-l-0 z-20 absolute -left-10 w-40 h-full bg-black'></div> */}
 			<ul
 				ref={scrollerRef}
 				className={cn(
-					' flex min-w-full shrink-0 gap-4 md:gap-8  w-max flex-nowrap',
+					' flex min-w-full shrink-0 gap-4 md:gap-8  w-max flex-nowrap ',
 					start && 'animate-scroll ',
 					pauseOnHover && 'hover:[animation-play-state:paused]'
 				)}
 			>
 				{items.map((item: any, idx: any) => (
-					<li className="" key={idx}>
+					<li key={idx}>
 						<Image
 							src={item}
 							alt={item}
 							width={200}
 							height={200}
-							className="h-[250px] w-[300px] md:w-[400px] rounded-xl"
+							className="h-[250px] w-[300px] md:w-[400px] rounded-xl shadow-md shadow-slate-800 my-4"
 						></Image>
 					</li>
 				))}

@@ -1,4 +1,4 @@
 const News = ({ params }: { params: { slug: string } }) => {
-	return <div>{params.slug}</div>;
+	return <article className="min-h-[80vh]">{params.slug}</article>;
 };
 export default News;
