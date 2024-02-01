@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint . --fix --max-warnings=0",
-    "format": "prettier . --write",
-    "prepare": "husky install"
+    "format": "prettier . --write"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.5",
@@ -17,6 +16,7 @@
     "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "contentful": "^10.6.21",
     "framer-motion": "^11.0.3",
     "lucide-react": "^0.316.0",
     "mini-svg-data-uri": "^1.4.4",
