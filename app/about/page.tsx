@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import MemberCard from './components/memberCard';
 const people = [
 	{ key: 1, name: 'Person one', img: '/p1.jpg' },
@@ -30,7 +29,7 @@ const About = () => {
 					can bring about meaningful change.Since our establishment, Ali
 					Foundation has left an indelible mark on numerous lives. Through
 					education initiatives, healthcare programs, and disaster relief
-					efforts, we've worked tirelessly to uplift communities and pave the
+					efforts, we&apos;ve worked tirelessly to uplift communities and pave the
 					way for a brighter tomorrow.Your involvement is crucial in shaping the
 					impact of Ali Foundation. Whether through financial contributions,
 					volunteering your time, or spreading awareness, your support amplifies
@@ -43,7 +42,7 @@ const About = () => {
 					At Ali Foundation, our actions are guided by core values such as
 					integrity, transparency, and inclusivity. We believe in fostering a
 					sense of community and empowering individuals to be agents of change
-					in their own lives. One of Ali Foundation's primary focuses is on
+					in their own lives. One of Ali Foundation&apos;s primary focuses is on
 					education. We are dedicated to providing quality education to every
 					child, unlocking doors to a brighter future. Through scholarships,
 					school development projects, and educational outreach programs, we aim
@@ -66,7 +65,7 @@ const About = () => {
 					or small, contributes to building a more compassionate and equitable
 					world. Together, we can make a lasting impact on lives and inspire
 					positive change. Thank you for considering Ali Foundation as a channel
-					for your philanthropic efforts. Together, let's create a legacy of
+					for your philanthropic efforts. Together, let&apos;s create a legacy of
 					compassion and transformation.
 				</p>
 			</article>
