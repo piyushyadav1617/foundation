@@ -41,10 +41,8 @@ const Navbar = () => {
 									<Link
 										href={item.link}
 										className={`${
-											item.link === path
-												? 'text-primary'
-												: 'text-muted-foreground'
-										} hover:text-primary transition-colors`}
+											item.link === path ? 'underline underline-offset-4' : ''
+										}`}
 									>
 										{item.label}
 									</Link>
