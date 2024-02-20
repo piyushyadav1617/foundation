@@ -1,9 +1,12 @@
-import getData from "@/contentfulGetData";
+import getClient from "@/contentfulClient";
 import NewsList from "./components/NewsList";
 
 const News = async () => {
 	
-	const news: any = await getData();
+	const client: any = getClient();
+	const res = await client.getEntries({ content_type: 'news' });
+
+	const news = res.items;
 	//console.log(news);
 	
 
