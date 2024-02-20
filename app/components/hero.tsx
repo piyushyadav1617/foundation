@@ -1,10 +1,6 @@
-'use client'
-
 import Image from 'next/image';
 import image from '@/public/daiga-ellaby-JZ51o_-UOY8-unsplash.jpg';
 import DonateBtn from './donateBtn';
-import { useAnimation, } from 'framer-motion';
-import { motion } from 'framer-motion';
 
 const Hero = () => {
 	return (
@@ -23,11 +19,7 @@ const Hero = () => {
 					<DonateBtn />
 				</div>
 				<div className="md:w-1/2 flex flex-col  gap-6 justify-center items-center md:items-end xl:items-center">
-					<motion.div
-					initial={{y:60, opacity: 0}}
-					animate={{y:0, opacity:1}}
-					transition={{duration: 2}}
-					>
+					<div>
 						<Image
 							src={image}
 							width={300}
@@ -35,7 +27,7 @@ const Hero = () => {
 							alt="Image"
 							className="w-80 md:w-60 lg:w-80 shadow-lg shadow-black "
 						/>
-					</motion.div>
+					</div>
 
 					<div>
 						<hr className="h-2 bg-slate-400 w-40 sm:w-60 my-4 rounded-full" />
@@ -49,9 +41,6 @@ const Hero = () => {
 					</div>
 				</div>
 			</div>
-
-
-			
 		</section>
 	);
 };
